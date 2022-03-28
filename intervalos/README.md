@@ -1,7 +1,10 @@
 # Intervalos | modificada (intervalos variáveis) + escrever funcoes | gerar novos testes
 
 Escreva um programa em C++ que lê inicialmente 5 números inteiros, n1, n2, n3, n4 e n5. Após os 5 primeiros números, o programa deverá ler um 
-número não conhecido de valores inteiros e contar quantos deles estão em cada um dos intervalos \[n1; n2\[, \[n2; n3\[, \[n3; n4\[, \[n4; n5\[ e quantos estão fora de qualquer desses intervalos. Para ler um número indeterminado de valores basta incluir o comando de extração associado ao `std::cin` como condição de parada em um laço (ver abaixo).
+número não conhecido de valores inteiros e contar quantos deles estão em cada um dos intervalos \[n1; n2\[, \[n2; n3\[, \[n3; n4\[, \[n4; n5\[ e quantos estão fora de qualquer desses intervalos. A única restrição a respeito dos números dos intervalos é que n2, n3 e n4 estão no intervalo \[n1, n2\], veja que você não precisa checar essa condição
+ela sempre será verdadeira para os casos de teste!
+
+Para ler um número indeterminado de valores basta incluir o comando de extração associado ao `std::cin` como condição de parada em um laço (ver abaixo).
 
 ```c++
 int x;
@@ -10,7 +13,7 @@ while( cin >> std::ws >> x) {
 }
 ```
 
-O programa deve ler os 5 números iniciais, armazená-los em um vetor, v1, e depois armazenar toda a entrada subsequente em outro vetor, v2. Após encerrada a entrada de dados, o programa deve imprimir a **porcentagem** de números para cada um dos quatro intervalos e de números fora deles, nessa ordem, um por linha e representados com quatro casas de precisão. Para definir a precisão use a função `std::setprecision(4)` antes do uso do `cout`.
+O programa deve ler os 5 números iniciais, armazená-los em um vetor, v1, e depois armazenar toda a entrada subsequente em outro vetor, v2. Após encerrada a entrada de dados, o programa deve imprimir a **porcentagem** de números para cada um dos quatro intervalos e de números fora deles, nessa ordem, um por linha e representados com quatro casas de precisão. Para definir a precisão use a funções `std::setprecision(2)` e `std::fixed` antes de imprimir assim: `cout<<std::fixed<<std::setprecision(2);`.
 
 Para este problema, __use ao menos uma função que recebe o vetor que define os intervalos__ para realizar cômputo das porcentagens. A quantidade de funções necessárias fica à seu critério.
 
@@ -34,17 +37,18 @@ Para este problema, __use ao menos uma função que recebe o vetor que define os
     </td>
     <td>
 <pre>
-18.18
-31.82
-13.64
-18.18
-18.18
+[0, 25[ = 18.18
+[25, 50[ = 31.82
+[50, 75[ = 13.64
+[75, 100[ = 18.18
+outros = 18.18
 </pre>
     </td>
   </tr>
     <tr>
     <td>
 <pre>
+0 25 50 75 100
 25 30 35 40 45 46 47
 78 85 90 99
 100 120
@@ -52,11 +56,11 @@ Para este problema, __use ao menos uma função que recebe o vetor que define os
     </td>
     <td>
 <pre>
-0
-53.85
-0
-30.77
-15.38
+[0, 25[ = 0
+[25, 50[ = 53.85
+[50, 75[ = 0
+[75, 100[ = 30.77
+outros = 15.38
 </pre>
     </td>
   </tr>
