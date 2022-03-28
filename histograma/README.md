@@ -35,10 +35,10 @@ template ou implementação de funções sobrecarregadas.
 
 ## Execução do programa
 
-Nesta questão para executar os testes você precisa fazer os seguintes comandos, no terminal, a partir do diretório onde este README está. Nesta
-questão devido a forma como o [src/function.cpp](src/function.cpp) e [include/function.cpp](include/function.cpp) estão os testes não irão
+ Nesta questão, devido a forma como o [src/function.cpp](src/function.cpp) e [include/function.cpp](include/function.cpp) estão, os testes não irão
 compilar logo de cara, então você pode começar rodando seus próprios testes antes de tentar rodar os testes oficiais. Sempre fique à vontade
-para ver como os testes são executados em [tests/main.cpp](tests/main.cpp).
+para ver como os testes são executados em [tests/main.cpp](tests/main.cpp). Para executar os testes você precisa fazer os comandos abaixo, 
+no terminal, a partir do diretório onde este README está.
 
 ```
 mkdir build
@@ -56,5 +56,3 @@ cmake ..
 cmake --build . --target program
 ./program
 ```
-
-Neste caso depois de executar, lembre-se que vc deve usar <kbd>CTRL</kbd>+<kbd>D</kbd> para que o laço de leitura acabe e o programa exiba a saída.
