@@ -20,17 +20,29 @@ include_directories( include )
 set( APP_NAME "program" )
 add_executable( ${APP_NAME}
                 src/main.cpp
-                src/Cadastro.cpp
-                src/Pessoa.cpp
-                 )
+                src/database.cpp )
+
+set( TESTS "tests" )
+add_executable( ${TESTS}
+                tests/main.cpp
+                src/database.cpp
+                ../test_manager/src/test_manager.cpp )
+target_include_directories( ${TESTS} PUBLIC ../test_manager/include)
 
 # define C++11 standard
-set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD 11)
+set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD 14)
+set_property(TARGET ${TESTS} PROPERTY CXX_STANDARD 14)
 
 add_custom_target(
     verify
     COMMAND python3 ${CMAKE_SOURCE_DIR}/../scripts/verify-inputs.py ./${APP_NAME}
     DEPENDS ${APP_NAME}
+)
+
+add_custom_target(
+    run_tests
+    COMMAND ${TESTS}
+    DEPENDS ${TESTS}
 )
 
 # The end

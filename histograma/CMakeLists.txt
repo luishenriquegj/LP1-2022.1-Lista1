@@ -34,13 +34,14 @@ add_executable( ${TESTS}
 
 target_include_directories( ${TESTS} PUBLIC ../test_manager/include)
 
+
 # define C++14 standard
 set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD 14)
+set_property(TARGET ${TESTS} PROPERTY CXX_STANDARD 14)
 
 add_custom_target(
     run_tests
     COMMAND ${TESTS}
-    # COMMAND ${CMAKE_BINARY_DIR}/tests/tests
     DEPENDS ${TESTS}
 )
 
