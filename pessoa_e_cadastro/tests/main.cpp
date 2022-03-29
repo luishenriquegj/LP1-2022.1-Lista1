@@ -70,7 +70,7 @@ int main ( void )
         EXPECT_TRUE( (result != nullptr) , "Erro em tests/main.cpp::" + std::to_string(__LINE__));
         delete result;
 
-        auto result = remover_pessoa(base, "212.21.122-12");
+        result = remover_pessoa(base, "212.21.122-12");
         EXPECT_TRUE( (result == nullptr) , "Erro em tests/main.cpp::" + std::to_string(__LINE__));
 
         auto pessoas = procurar_nome(base, "Joana Ayla Rocha");
