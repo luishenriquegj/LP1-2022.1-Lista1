@@ -51,7 +51,8 @@ while( std::getline(std::cin, line) ) {
   <tr>
     <td>
 <pre>
-procurar_cpf 204.075.312-54
+procurar_cpf
+204.075.312-54
 </pre>
     </td>
     <td>
@@ -66,7 +67,8 @@ Eliane Sophie Cavalcanti
     <tr>
     <td>
 <pre>
-procurar_cpf 121.131.312-54
+procurar_cpf
+121.131.312-54
 </pre>
     </td>
     <td>
