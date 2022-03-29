@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 
+/*
+TODO: definição da struct*/
 struct Pessoa{
     /*campos aqui*/
 };

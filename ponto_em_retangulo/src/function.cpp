@@ -11,5 +11,6 @@ int pt_in_rect( const Ponto &IE, const Ponto &SD, const Ponto &P )
 }
 
 bool validate_rect( const Ponto&, const Ponto& ){
+    // TODO: Adicione seu código aqui.
     return true;
 }

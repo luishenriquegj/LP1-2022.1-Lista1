@@ -13,11 +13,13 @@ Outro ponto importante é que você tente fazer a compilação e execução dos 
 
 # Suas Tarefas
 
-As tarefas a serem implementadas correspondem a cada um dos diretórios neste repositório (exceto os diretórios `scripts` e `pics`) sendo a ordem sugerida:
+As tarefas a serem implementadas correspondem a cada um dos diretórios neste repositório (exceto os diretórios `scripts` e `test_manager`) sendo a ordem sugerida:
 
 1. [intervalos](./intervalos)
 2. [ponto_em_retangulo](./ponto_em_retangulo)
-8. [histograma](./histograma)
+3. [histograma](./histograma)
+4. [pessoa_e_cadastro](./pessoa_e_cadastro)
+
 
 
 Para facilitar a implementação de suas respostas, você vai encontrar nesse repositório o código de suporte organizado em várias pastas, uma para cada questão da lista. Esse código já está preparado para compilar cada projeto individualmente através do uso de `cmake` e contém indicações sobre o que você precisa alterar através de comentários como `// TODO` espalhados por alguns arquivos `.cpp` e `.h`. Para você usufruir dessa infraestrutura de compilação e testagem disponível, é importante que você **não altere nenhum arquivo além do que for indicado nesse documento**.
