@@ -14,13 +14,14 @@ set ( CMAKE_CXX_FLAGS "-Wall" )
 include_directories( include )
 
 ### [2] Test engine
-# includes do test manager
+# includes do test managerc/main.cpp
+                src/func.cpp 
 
 # Cria um executável com nome "program" com base no main.cpp
 set( APP_NAME "program" )
 add_executable( ${APP_NAME}
                 src/main.cpp
-                src/func.cpp )
+                src/function.cpp )
 
 # define C++14 standard
 set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD 14)
