@@ -27,8 +27,8 @@ caso não seja encontrado.
 a pessoa, retorna true caso contrário e insere a pessoa na base.
 4. procurar_nome: recebe a base de dados criada e um nome, retorna um vetor contendo todas as instancias da struct pessoa
 que tenham o nome recebido. Caso o nome não exista na base, retorna um vetor vazio.
-5. remover_pessoa: recebe a base de dados criada e um cpf, retorna false se o cpf não existir na base e não realiza qualquer operação,
-retorna true caso contrário e remove/deleta a instância da struct pessoa da base dedados/programa.
+5. remover_pessoa: recebe a base de dados criada e um cpf, retorna **nullptr** se o cpf não existir na base e não realiza qualquer operação,
+retorna uma **referencia para a struct pessoa** caso contrário e remove a instância da struct pessoa da base dedados.
 
 Além de implementar as funções, implemente um programa que carrega a base de dados contida em [./data/CadastroUnico.txt](./data/CadastroUnico.txt) e depois
 lê uma quantidade não definida de comandos como os que estão listados na dabela que segue. De forma similar à questão [intervalos](../intervalos/), 
