@@ -15,7 +15,6 @@ include_directories( include )
 
 ### [2] Test engine
 # includes do test managerc/main.cpp
-                src/func.cpp 
 
 # Cria um executável com nome "program" com base no main.cpp
 set( APP_NAME "program" )
