@@ -1,23 +1,36 @@
-/*!
- * @brief This code implements the Intervalos programming problem
- * @author selan
- * @data June, 6th 2021
- */
+
 
 #include <iostream>
-using std::cout;
-using std::cin;
-using std::endl;
-#include <iomanip>
-using std::setprecision;
-
+#include <vector>
 #include "func.hpp"
 
-// Se desejar, crie funções aqui, antes do main().
-
+#include <iomanip>
+using std::setprecision;
+using namespace std;
 int main(void)
 {
-    // TODO: Adicione aqui a sua solução.
+
+    int x, z = 0;
+    float input = 0;
+    float cont_num = 0;
+
+    vector<float> intervalos;
+    vector<float> valores;
+
+    for (int i = 0; i < 5; i++)
+    {
+        std::cin >> input;
+        intervalos[i] = input;
+    }
+
+    while (std::cin >> std::ws >> x)
+    {
+        z++;
+        valores[z] = x;
+        cont_num++;
+        std::cout << valores[z] << std::endl;
+    }
+    func(intervalos, valores, cont_num);
 
     return 0;
 }

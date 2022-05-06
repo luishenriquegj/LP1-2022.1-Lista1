@@ -1,7 +1,7 @@
+#include <vector>
 #ifndef func_hpp
 #define func_hpp
 
-/*TODO: apenas placeholder, modifique aqui para adiconar suas funções*/
-void f();
+float *func(std::vector<float>, std::vector<float>, float);
 
 #endif //func_hpp

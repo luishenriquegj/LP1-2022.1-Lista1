@@ -7,7 +7,10 @@
 /*
 TODO: definição da struct*/
 struct Pessoa{
-    /*campos aqui*/
+    private:{
+        std::string cpf
+        
+    }
 };
 
 static std::vector<Pessoa*> base;
